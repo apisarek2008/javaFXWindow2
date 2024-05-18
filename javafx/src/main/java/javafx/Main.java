@@ -1,12 +1,23 @@
 package javafx;
 
-public class Main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+
+public class Main extends Application {
 
 	public static void main(String[] args) {
-		System.out.println("jnfgkrj");
-		System.out.println("hfgbjkewbfgekgbekgbejgbejgr");
-		System.out.println("jkrghekghreksdsd");
+		launch(args);
 
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		Stage stage = new Stage();
+		
+
+		
+		
 	}
 
 }
