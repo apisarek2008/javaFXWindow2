@@ -9,11 +9,18 @@ public class StackPaneController {
 	private Button button;
 
 	public StackPaneController() {
-		System.out.println("gdkgkd");
+		
 	}
 
 	@FXML
 	void initialize() {
-		button.setText("RRR");
+		button.setText("nowy Przycisk");
 	}
+	
+	@FXML
+	public void btnOnAction() {
+		System.out.println("button pressed");
+	}
+	
+	
 }
