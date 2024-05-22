@@ -12,11 +12,14 @@ public class StackPaneController {
 
 	@FXML
 	private Button btn2;
-	
+
 	@FXML
 	private Button id_btnLeft;
 	@FXML
 	private CheckBox chkBox;
+
+	@FXML
+	private Button id_btn_Lambda;
 
 	@FXML
 	void initialize() {
@@ -31,16 +34,27 @@ public class StackPaneController {
 
 		};
 		EventHandler<ActionEvent> act_btnLeft = new EventHandler<ActionEvent>() {
-			
+
 			@Override
 			public void handle(ActionEvent arg0) {
 				btn2_event();
-				
+
 			}
+		};
+
+		EventHandler<ActionEvent> act_btn_Lambda = e -> {
+			btn_Lambda();
+
 		};
 
 		btn2.addEventHandler(ActionEvent.ACTION, handler);
 		id_btnLeft.addEventHandler(ActionEvent.ACTION, act_btnLeft);
+		id_btn_Lambda.addEventHandler(ActionEvent.ACTION, act_btn_Lambda);
+
+	}
+
+	private void btn_Lambda() {
+		System.out.println("button Lambda");
 
 	}
 
